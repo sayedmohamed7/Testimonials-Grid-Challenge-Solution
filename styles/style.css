@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ecf2f8;
+    font-family: 'Barlow Semi Condensed';
+    font-size: 13px;
+}
+
+#main-container {
+    padding: 5% 3%;
+}
+
+.testimonial-1 {
+    background-color: #7541c8;
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+}
+
+.testimonial-1 h4 {
+    position: relative;
+    z-index: 3;
+}
+
+#quote {
+    position: absolute;
+    top: 0;
+    right: 15%;
+    z-index: 1;
+    border: unset;
+}
+
+.testimonial-1 img,
+.testimonial-4 img {
+    border: 2px solid #9F81D0;
+}
+
+.testimonial-2 {
+    background-color: #48556a;
+    color: #ffffff;
+}
+
+.testimonial-3 {
+    background-color: #ffffff;
+}
+
+.testimonial-4 {
+    background-color: #19212e;
+    color: #ffffff;
+}
+
+.testimonial-5 {
+    background-color: #ffffff;
+}
+
+.grid-items {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.grid-items p {
+    opacity: 70%;
+}
+
+.grid-items h4 {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.name-container .name {
+    opacity: 100%;
+    font-size: 1rem;
+}
+
+.name-container .status {
+    opacity: 50%;
+}
+
+.img-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.img-name img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 35px;
+}
+
+
+
+@media (min-width: 576px) {
+
+    #main-container,
+    .main-left,
+    .top,
+    .bottom {
+        display: flex;
+    }
+
+    #main-container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .main-left {
+        flex-direction: column;
+        flex-basis: 80%;
+    }
+
+    .testimonial-5 {
+        flex-basis: 20%;
+    }
+
+    .top,
+    .bottom {
+        flex-basis: 50%;
+    }
+
+    .testimonial-1,
+    .testimonial-4 {
+        flex-basis: 69%;
+    }
+
+    .testimonial-2,
+    .testimonial-3 {
+        flex-basis: 31%;
+    }
+
+    .main-left .grid-items {
+        margin-right: 20px;
+    }
+}
